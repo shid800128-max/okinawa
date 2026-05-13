@@ -1268,7 +1268,7 @@ var typeColors = { food:'#22c55e', shop:'#60a5fa', sight:'#fb923c', travel:'#ff5
 
 function initMap() {
   leafMap = L.map('map', { zoomControl: false }).setView([26.40, 127.80], 10);
-  L.tileLayer('https://tile.mierune.co.jp/mierune/{z}/{x}/{y}.png', {
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© <a href="https://mierune.co.jp/">MIERUNE Inc.</a> © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     maxZoom: 18
   }).addTo(leafMap);
